@@ -57,7 +57,14 @@ module.exports = {
     if (messageContent.startsWith("ai")) {
       const input = messageContent.replace(/^ai\s*/, "").trim();
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
-      message.reply(`🇨🇲❤⚫𝗝𝗼𝗸𝗲𝗿-𝗗𝗲𝗮𝘁𝗵━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, messageID);
+      message.reply(`
+                        
+ ▬▭▬𝗜𝗻𝗱𝗼𝗙𝗮𝗺𝗶𝗹𝘆▬▭▬          
+      ◆:*:◇:*:🌟:*:◇:*:◆
+
+\n${response}\n
+   ❖✦ 『N~Drone』 ✦❖
+▬▭▬▬▭▬▬▭▬▬▭▬`, messageID);
     }
   }
 };
